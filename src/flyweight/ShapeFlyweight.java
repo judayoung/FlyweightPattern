@@ -6,4 +6,8 @@ public interface ShapeFlyweight {
 
     String getColor();
 
+    void setRadius(int radius);
+    void setX(int x);
+    void setY(int y);
+
 }
