@@ -15,7 +15,7 @@ public class ShapeFactory {
 
     private static ShapeFlyweight createCircleAndPutMap(String color) {
         ShapeFlyweight circle = new Circle(color);
-        createdCircleMap.put(circle.getColor(), circle);
+        createdCircleMap.put(((Circle) circle).getColor(), circle);
         System.out.println("=== 새로운 객체 생성 : " + color + "색 원 ===");
         return circle;
     }
